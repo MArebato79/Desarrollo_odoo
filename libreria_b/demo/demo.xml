@@ -1,0 +1,123 @@
+<odoo>
+    <data noupdate="1">
+        <!-- Registro 1: Un libro clásico -->
+        <record id="demo_libro_quijote" model="libreria_b.libro">
+            <field name="title">Don Quijote de la Mancha</field>
+            <field name="pages">1345</field>
+            <field name="price">25.50</field>
+            <field name="publicacion_date">1605-01-16</field>
+        </record>
+
+        <!-- Registro 2: Un libro técnico (caro) -->
+        <record id="demo_libro_odoo_dev" model="libreria_b.libro">
+            <field name="title">Odoo 17 Development Essentials</field>
+            <field name="pages">450</field>
+            <field name="price">49.99</field>
+            <field name="publicacion_date">2023-11-15</field>
+        </record>
+
+        <!-- Registro 3: Un libro no disponible (Barato) -->
+        <record id="demo_libro_principito" model="libreria_b.libro">
+            <field name="title">El Principito</field>
+            <field name="pages">96</field>
+            <field name="price">12.00</field>
+            <field name="publicacion_date">1943-04-06</field>
+        </record>
+
+        <!-- Registro 4: Ciencia Ficción -->
+        <record id="demo_libro_dune" model="libreria_b.libro">
+            <field name="title">Dune</field>
+            <field name="pages">896</field>
+            <field name="price">18.75</field>
+            <field name="publicacion_date">1965-08-01</field>
+        </record>
+
+        <!-- Registro 5: Best Seller Reciente -->
+        <record id="demo_libro_habitos" model="libreria_b.libro">
+            <field name="title">Atomic Habits</field>
+            <field name="pages">320</field>
+            <field name="price">21.00</field>
+            <field name="publicacion_date">2018-10-16</field>
+        </record>
+
+        <!-- Registro 6: Distopía Clásica -->
+        <record id="demo_libro_1984" model="libreria_b.libro">
+            <field name="title">1984</field>
+            <field name="pages">328</field>
+            <field name="price">14.50</field>
+            <field name="publicacion_date">1949-06-08</field>
+        </record>
+
+        <!-- Registro 7: Realismo Mágico -->
+        <record id="demo_libro_soledad" model="libreria_b.libro">
+            <field name="title">Cien años de soledad</field>
+            <field name="pages">417</field>
+            <field name="price">19.99</field>
+            <field name="publicacion_date">1967-05-30</field>
+        </record>
+
+        <!-- Registro 8: Programación -->
+        <record id="demo_libro_clean_code" model="libreria_b.libro">
+            <field name="title">Clean Code</field>
+            <field name="pages">464</field>
+            <field name="price">42.00</field>
+            <field name="publicacion_date">2008-08-01</field>
+        </record>
+
+        <!-- Registro 9: Fantasía Épica -->
+        <record id="demo_libro_anillos" model="libreria_b.libro">
+            <field name="title">El Señor de los Anillos: La Comunidad del Anillo</field>
+            <field name="pages">423</field>
+            <field name="price">22.50</field>
+            <field name="publicacion_date">1954-07-29</field>
+        </record>
+
+        <!-- Registro 10: Historia / Ensayo -->
+        <record id="demo_libro_sapiens" model="libreria_b.libro">
+            <field name="title">Sapiens: De animales a dioses</field>
+            <field name="pages">496</field>
+            <field name="price">20.90</field>
+            <field name="publicacion_date">2011-01-01</field>
+        </record>
+
+        <!-- Registro 11: Ciencia Ficción Cyberpunk -->
+        <record id="demo_libro_neuromante" model="libreria_b.libro">
+            <field name="title">Neuromante</field>
+            <field name="pages">271</field>
+            <field name="price">15.20</field>
+            <field name="publicacion_date">1984-07-01</field>
+        </record>
+
+        <!-- Registro 12: Literatura Americana -->
+        <record id="demo_libro_gatsby" model="libreria_b.libro">
+            <field name="title">El Gran Gatsby</field>
+            <field name="pages">180</field>
+            <field name="price">11.95</field>
+            <field name="publicacion_date">1925-04-10</field>
+        </record>
+
+        <!-- Registro 13: Terror -->
+        <record id="demo_libro_it" model="libreria_b.libro">
+            <field name="title">It (Eso)</field>
+            <field name="pages">1138</field>
+            <field name="price">28.00</field>
+            <field name="publicacion_date">1986-09-15</field>
+        </record>
+
+        <!-- Registro 14: Novela Histórica -->
+        <record id="demo_libro_pilares" model="libreria_b.libro">
+            <field name="title">Los pilares de la Tierra</field>
+            <field name="pages">1068</field>
+            <field name="price">24.90</field>
+            <field name="publicacion_date">1989-10-01</field>
+        </record>
+
+        <!-- Registro 15: Filosofía -->
+        <record id="demo_libro_meditaciones" model="libreria_b.libro">
+            <field name="title">Meditaciones</field>
+            <field name="pages">200</field>
+            <field name="price">9.99</field>
+            <field name="publicacion_date">0180-01-01</field>
+        </record>
+    </data>
+</odoo>
