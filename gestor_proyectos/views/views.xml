@@ -1,0 +1,62 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="gestor_proyectos.proyecto_list">
+      <field name="name">proyecto list</field>
+      <field name="model">gestor_proyectos.proyecto</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="nombre"/>
+          <field name="descripcion"/>
+          <field name="fechaInicio"/>
+          <field name="fechaFin"/>
+          <field name="responsable"/>
+          <field name="porcentajeAvance"/>
+        </list>
+      </field>
+    </record>
+
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="gestor_proyectos.proyecto_action_window">
+      <field name="name">Gestor de Proyectos</field>
+      <field name="res_model">gestor_proyectos.proyecto</field>
+      <field name="view_mode">list,form</field>
+    </record>
+
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="gestor_proyectos.action_server">
+      <field name="name">gestorProyectos server</field>
+      <field name="model_id" ref="model_gestor_proyectos_gestor_proyectos"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "list,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+
+    <menuitem name="Gestor de Proyectos" id="gestor_proyectos.menu_root"/>
+
+    <!-- menu categories -->
+
+    <menuitem name="Menu 1" id="gestor_proyectos.menu_1" parent="gestor_proyectos.menu_root"/>
+
+
+    <!-- actions -->
+
+    <menuitem name="List" id="gestor_proyectos.menu_1_list" parent="gestor_proyectos.menu_1"
+              action="gestor_proyectos.proyecto_action_window"/>
+    
+
+  </data>
+</odoo>
